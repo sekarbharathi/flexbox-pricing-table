@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Flexbox Pricing Table</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+      body {
+        font-family:  cursive;
+        background-color: rgb(46, 5, 32);
+       
+      }
+      h1,h2{
+        text-align: center;
+        color: aliceblue;
+        font-family: italics;
+       
+      }
+      .pricing-container{
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+        align-items: center;
+        height: 65vh;
+      }
+
+      .pricing-plan{
+        background-color:rgb(196, 156, 206);
+        flex:1;
+        max-width: 400px;
+        padding: 20px;
+        border-radius: 10%;
+        text-align: center;
+      }
+      .plan-title{
+        font-weight: bold;
+        font-size: 20px;
+        margin-bottom: 10px;
+      }
+      .plan-price{
+        font-weight: bold;
+        font-size: 40px;
+        margin-bottom: 10px;
+      }
+      .plan-features{
+        list-style: none;
+        padding: 0%;
+        margin: 0% ;
+        
+      }
+
+      li{
+        margin-bottom: 10px ;
+      }
+
+      .plan-button{
+        background-color: rgb(124, 90, 155);
+        padding: 10px;
+        border-radius: 10%;
+        border:none;
+      }
+      
+      @media (max-width: 1250px) {
+        .pricing-container{
+          flex-direction: column;
+          height: 100%;
+        }
+      }
+      .socmed{
+        display: flex;
+        justify-content: end;
+        color: aliceblue; 
+      }
+
+      .socmed > i{
+        margin: 10px;
+        font-size: 30px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1> Flixnet Monthly Plans  </h1> 
+    <h2>Sign up to our affordable plans to enjoy the OTT world!!</h2>
+    <div class="pricing-container">
+      <div class="pricing-plan">
+        <div class="plan-title">Basic</div>
+        <div class="plan-price">$9.99/month</div>
+        <ul class="plan-features">
+          <li>✅ Watch in 720p (HD) </li>
+          <li>✅ Simultaneous viewing devices allowed - 1</li>
+          <li>Supported Devices : 📱 </li>
+        </ul>
+        <button class="plan-button">Sign Up</button>
+      </div>
+      <div class="pricing-plan">
+        <div class="plan-title">Standard</div>
+        <div class="plan-price">$19.99/month</div>
+        <ul class="plan-features">
+          <li>✅ Watch in 1080p (Full HD) </li>
+          <li>✅ Simultaneous viewing devices allowed - 2</li>
+          <li>✅ Supported Devices : 📱 🖥️</li>
+        </ul>
+        <button class="plan-button">Sign Up</button>
+      </div>
+      <div class="pricing-plan">
+        <div class="plan-title">Premium</div>
+        <div class="plan-price">$49.99/month</div>
+        <ul class="plan-features">
+          <li>✅ Watch in 4K + HDR (Ultra HD)</li>
+          <li>✅ Simultaneous viewing devices allowed - 4</li>
+          <li>✅ Supported Devices : 📱 🖥️ 📺 </li>
+        </ul>
+        <button class="plan-button">Sign Up</button>
+      </div>
+      </div>
+    </div>
+    <footer style="color: aliceblue; font-size: 15px; text-align: end;"> 
+      <p>© 20XX Flixnet. All rights reserved.</p>
+    </footer>
+    <div class="socmed">
+      <i class="fa-brands fa-square-instagram"></i>
+      <i class="fa-brands fa-square-x-twitter"></i>
+      <i class="fa-brands fa-square-facebook"></i>
+      </div>
+  
+  </body>
+</html>
